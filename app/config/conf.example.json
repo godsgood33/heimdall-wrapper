@@ -1,0 +1,12 @@
+{
+    "heimdall": {
+        "ip": "{ip}",
+        "port": {port},
+        "proto": "http|https",
+        "tags": [
+            "Main",
+            "Home",
+            "Media"
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+#categories {
+    min-height: 50px;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+}
+
+#categories #user {
+    display: inline-block;
+    margin-left: 5px
+}
+
+#categories ul {
+    display: inline-block;
+    margin: 0;
+}
+
+#categories ul li {
+    display: inline-block;
+    margin: 2.5vh;
+}
+
+#categories ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#heimdall {
+    height: 93vh;
+    width: 99vw;
+}
+
+body {
+    margin: 0
+}
