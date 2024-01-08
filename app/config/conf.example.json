@@ -1,12 +1,24 @@
 {
+    "title": "Start Page",
+    "users": {
+        "{username}": {
+            "homeTag": "main",
+            "tags": [
+                "Main",
+                "Home",
+                "Media"
+            ]
+        },
+        "{username2}": {
+            "homeTag": "{tag}",
+            "tags":[
+                
+            ]
+        }
+    },
     "heimdall": {
         "ip": "{ip}",
         "port": {port},
-        "proto": "http|https",
-        "tags": [
-            "Main",
-            "Home",
-            "Media"
-        ]
+        "proto": "http|https"
     }
 }
