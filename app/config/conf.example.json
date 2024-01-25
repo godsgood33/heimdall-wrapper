@@ -17,8 +17,8 @@
         }
     },
     "heimdall": {
-        "ip": "{ip}",
-        "port": {port},
-        "proto": "http|https"
+        "ip": "heimdall",
+        "port": 81,
+        "proto": "http"
     }
 }
