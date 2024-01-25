@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  heimdall-wrapper:
+    image: php:8.2-apache:latest
+    container_name: heimdall-wrapper
+    ports:
+      - ${HW_PORT}:80
+    volumes:
+      - ./app:/html/www/html
+      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+    depends_on:
+      - heimdall
+
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ./heimdall-config:/config
+    ports:
+      - ${H_PORT}:80
+      - ${HS_PORT}:443
+    restart: unless-stopped
