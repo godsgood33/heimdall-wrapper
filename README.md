@@ -4,6 +4,12 @@ Heimdall Wrapper is intended to wrap a Heimdall instance to provide paged links 
 
 ## Install
 
+### Clone the repo
+
+Clone the repository
+
+`git clone https://github.com/godsgood33/heimdall-wrapper.git`
+
 ### Update config file in `./app/config/conf.example.json`
 
 Rename the file to `conf.json` and update users add as many users as you have in your Heimdall instance.  Update the "homeTag" as the default tag you want to see when navigating to the page.  Update the "tags" array with all the tags that you will you to display at the top of the page, each tag has to correspond to a tag in Heimdall.  You can add as many as you like, but you'll it can only safely show about 15 tags across a 27" 1080p monitor
